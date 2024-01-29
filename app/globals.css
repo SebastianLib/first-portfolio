@@ -78,7 +78,7 @@
 
 @layer components {
   .navLi {
-    @apply text-base md:text-xl transition-all duration-300 border-2 border-transparent rounded-full px-2 py-1 cursor-pointer;
+    @apply text-base md:text-2xl transition-all duration-300 border-2 border-transparent rounded-full px-2 py-1 cursor-pointer;
   }
   .active{
     @apply border-white;

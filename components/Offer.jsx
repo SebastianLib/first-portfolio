@@ -6,14 +6,24 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Services from "./Services";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Offer = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+      setLoading(false)
+  },[])
+
+  if(loading){
+    return <div>loading</div>
+  }
 
   return (
     <section id="offer" className="bg-gray-50 min-h-screen">
       <div className="py-10">
         <h2 className="text-center mt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-normal">
-          <span className="bg-red-600 text-white px-4">Etapy</span> Współpracy
+          <span className="bg-red-600 text-white px-4 pb-2">Etapy</span> Współpracy
         </h2>
         <motion.div 
             initial={{ opacity:0 }}

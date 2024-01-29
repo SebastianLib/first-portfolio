@@ -20,8 +20,8 @@ const Services = () => {
           <MdComputer className="w-20 h-20 rounded-full bg-red-500 text-white p-3" />
           <h2 className="text-xl font-bold">Strony internetowe</h2>
           <p className="max-w-[300px] text-center">
-            Indywidualne podejście do każdego projektu jest dla mnie zawsze
-            priorytetem, ponieważ każde zlecenie jest unikalne.
+            Jest to rozbudowana strona składająca sie z wielu podstron,
+            idealna dla osób z większych budżetem.
           </p>
         </motion.div>
         <motion.div 

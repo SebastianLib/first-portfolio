@@ -17,8 +17,8 @@ const MobileNavbar = () => {
       <SheetContent>
         <ul className="flex flex-col gap-8 cursor-pointer">
           {linksArray.map((item) => (
-            <SheetClose asChild>
-              <Link href={item.href} key={item.href}>
+            <SheetClose asChild key={item.href}>
+              <Link href={item.href}>
                 <li className="navLi text-3xl">{item.label}</li>
               </Link>
             </SheetClose>

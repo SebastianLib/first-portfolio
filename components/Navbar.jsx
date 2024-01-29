@@ -27,11 +27,12 @@ const Navbar = () => {
       variants={navVariants}
       initial={"hidden"}
       whileInView={"show"}
-    className={`fixed top-0 w-full z-30 ${
+    className={`fixed top-0 w-full z-30 transition ${
       background ? "bg-red-700/95" : "bg-transparent"
     } `}
     >
-       <nav className="flex items-center justify-between relative z-20 py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20">
+       <nav className="flex items-center justify-between relative z-20 py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20
+       ">
         <svg
           height="68"
           viewBox="0 0 100 68"
@@ -104,7 +105,8 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-2 lg:gap-8 cursor-pointer">
           {linksArray.map(item =>(
             <Link href={item.href} key={item.href}>
-              <li className="navLi">{item.label}</li>
+              <li className="navLi relative before:content-[''] before:w-0 before:h-[2px] before:bg-white before:absolute
+            before:-bottom-2 hover:before:w-full before:left-[50%] hover:before:left-0 before:transition-all">{item.label}</li>
             </Link>
           ))}
         </ul>

@@ -60,7 +60,7 @@ const Contact = () => {
                 name="user_name"
                 id="name"
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                placeholder="W czym mogę pomóc?"
+                placeholder="Jan Kowalski?"
                 required
               />
             </div>
@@ -105,18 +105,20 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      <div className="flex max-w-lg mx-auto justify-between items-center pb-12 flex-wrap">
+      <div className="flex max-w-lg mx-auto justify-between items-center pb-12 flex-wrap px-2 md:px-0">
         <div className="flex flex-col items-center justify-center transition-transform hover:scale-105 gap-2 cursor-pointer">
-          <FaPhone className="w-20 h-20 p-6 bg-white rounded-full " />
+          <FaPhone className="w-20 h-20 p-6 bg-white rounded-full" />
           <h2 className="font-bold text-xl">Zadzwoń do mnie:</h2>
           <p>881 372 416</p>
         </div>
         <div className="flex flex-col items-center justify-center transition-transform hover:scale-105 gap-2 cursor-pointer">
           <IoIosMail className="w-20 h-20 p-6 bg-white rounded-full" />
           <h2 className="font-bold text-xl">Mój adres email:</h2>
-          <p>881 372 416</p>
+          <p>selicode04@gmail.com</p>
         </div>
+        
       </div>
+      
     </section>
   );
 };
