@@ -40,15 +40,15 @@ const Intro = () => {
         className="h-screen z-50 p-10 bg-white fixed top-0 left-0 
         z-100 w-full flex items-center justify-center gap-10 tracking-tight"
       >
-        <h1 className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-1">
+        <span className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-1">
           Seli
-        </h1>
-        <h1 className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-2">
+        </span>
+        <span className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-2">
           Code
-        </h1>
-        <h1 className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-3">
+        </span>
+        <span className={`text-9xl font-bold text-red-600 ${loading ? "opacity-0": "opacity-100"}`} id="title-3">
           Studio
-        </h1>
+        </span>
       </div>
     </div>
   )
