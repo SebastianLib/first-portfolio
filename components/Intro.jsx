@@ -34,7 +34,7 @@ const Intro = () => {
     }, []);
 
   return (
-    <div className="relative" ref={comp}>
+    <div className="relative hidden lg:flex" ref={comp}>
     <div
         id="intro-slider"
         className="h-screen z-50 p-10 bg-white fixed top-0 left-0 

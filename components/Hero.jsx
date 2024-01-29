@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className="h-screen relative bg-fixed bg-heroImg bg-cover bg-center flex justify-center items-center">
+    <main className="h-screen relative bg-fixed bg-heroImg bg-cover bg-center flex justify-center items-center">
       <div className="z-20 text-white text-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 bg-black/80"></div>
-    </section>
+    </main>
   );
 };
 

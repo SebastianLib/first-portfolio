@@ -12,14 +12,13 @@ export const metadata = {
   icons: {
     icon: "/assets/logoSvg.svg",
   },
+  language: "pl-PL"
 };
 export default function Home() {
 
   return (
     <>
-    <div className="hidden lg:flex">
     <Intro/>
-    </div>
       <Toaster />
       <Hero />
       <About />
