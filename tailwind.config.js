@@ -54,9 +54,9 @@ module.exports = {
 
       },
       backgroundImage: {
-        'heroImg': "url('/assets/xdd.png')",
-        'contactSmall': "url('/assets/contactSmall.jpg')",
-        'contactBig': "url('/assets/contactBig.jpg')",
+        'heroImg': "url('/xdd.png')",
+        'contactSmall': "url('/contactSmall.jpg')",
+        'contactBig': "url('/contactBig.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",

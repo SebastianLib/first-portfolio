@@ -121,7 +121,7 @@ const Offer = () => {
               Zakończenie prac
             </h3>
             <p>
-              Oddanie klientowi gotowej strony internetowej, poprzedzone końcową
+              Oddanie gotowej strony internetowej, poprzedzone końcową
               rozmową i ewentualnymi korektami, w celu zapewnienia pełnej
               satysfakcji z finalnego produktu!
             </p>

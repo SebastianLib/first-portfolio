@@ -31,14 +31,15 @@ const Navbar = () => {
       background ? "bg-red-700/95" : "bg-transparent"
     } `}
     >
-       <nav className="flex items-center justify-between relative z-20 py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20
+       <nav className="flex items-center justify-between relative z-20 py-2 md:py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20
        ">
+        <Link href="/">
         <svg
           height="68"
           viewBox="0 0 100 68"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-[70px] md:w-[100px]"
+          className="w-[65px] md:w-[100px]"
         >
           <g clipPath="url(#clip0_1_2)">
             <path
@@ -101,6 +102,7 @@ const Navbar = () => {
             </clipPath>
           </defs>
         </svg>
+        </Link>
 
         <ul className="hidden md:flex gap-2 lg:gap-8 cursor-pointer">
           {linksArray.map(item =>(

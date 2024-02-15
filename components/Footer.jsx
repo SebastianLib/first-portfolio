@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/logo.png";
 import Image from "next/image";
 import { linksArray } from "@/lib/utils";
 import Link from "next/link";
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex flex-col md:flex-row items-center justify-center sm:justify-between">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Image
@@ -19,7 +19,7 @@ const Footer = () => {
             height={70}
             />
           </a>
-          <ul className="flex gap-2 lg:gap-8 cursor-pointer">
+          <ul className="flex justify-center flex-wrap gap-2 lg:gap-8 cursor-pointer">
           {linksArray.map(item =>(
             <Link href={item.href} key={item.href}>
               <li className="navLi">{item.label}</li>

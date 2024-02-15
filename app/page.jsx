@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ButtonToStart from "@/components/ButtonToStart";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
@@ -10,20 +11,22 @@ export const metadata = {
   description:
     "Projektowanie i tworzenie najwyższej jakości stron internetowych, będące świetną wizytówką twojej firmy.",
   icons: {
-    icon: "/assets/logoSvg.svg",
+    icon: "/logoSvg.svg",
   },
-  language: "pl-PL"
 };
 export default function Home() {
-
+  
   return (
-    <>
-    <Intro/>
+    <div className="relative">
+      <div className="relative hidden lg:flex">
+        <Intro />
+      </div>
       <Toaster />
       <Hero />
       <About />
       <Offer />
       <Contact />
-    </>
+      <ButtonToStart/>
+    </div>
   );
 }

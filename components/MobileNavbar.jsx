@@ -15,11 +15,11 @@ const MobileNavbar = () => {
         <Menu className="w-10 h-10" />
       </SheetTrigger>
       <SheetContent>
-        <ul className="flex flex-col gap-8 cursor-pointer">
+        <ul className="flex flex-col gap-8 cursor-pointer justify-center mt-12">
           {linksArray.map((item) => (
             <SheetClose asChild key={item.href}>
               <Link href={item.href}>
-                <li className="navLi text-3xl">{item.label}</li>
+                <li className="navLi text-3xl font-medium">{item.label}</li>
               </Link>
             </SheetClose>
           ))}
